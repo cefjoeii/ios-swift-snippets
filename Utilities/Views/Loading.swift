@@ -1,5 +1,6 @@
 // Loading.swift
 // A utility class that shows a loading overlay on the screen
+// You don't have to create it manually on the Storyboard over and over again
 
 import UIKit
 

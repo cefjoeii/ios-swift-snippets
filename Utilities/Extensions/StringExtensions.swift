@@ -54,4 +54,13 @@ extension String {
     func isNotValidEmail() -> Bool {
         return !self.isValidEmail()
     }
+
+    // This extension function is a depency of the CustomTextfield
+    // to limit the length of the string
+    func limitLength(_ n: Int) -> String {
+        if (self.count <= n) {
+            return self
+        }
+        return String( Array(self).prefix(upTo: n) )
+    }
 }
