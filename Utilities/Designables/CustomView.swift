@@ -1,6 +1,6 @@
 // CustomView.swift
 // Easily add custom properties to views such as rounded borders in the Interface Builder itself (GUI)
-// Make sure you set the class of the textfield to CustomView
+// Make sure you set the class of the view to CustomView
 
 import UIKit
 
