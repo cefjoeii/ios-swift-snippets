@@ -23,17 +23,6 @@ extension String {
             .trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
-    func convertDateFormat(from: String, to: String) -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = from
-        let date = dateFormatter.date(from: self)
-        dateFormatter.dateFormat = to
-        
-        if let validDate = date { return "\(dateFormatter.string(from: validDate))" }
-
-        return self
-    }
-    
     func isValidEmail() -> Bool {
         let emailRegEx = "[A-Z0-9a-z.-_]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,3}"
         
@@ -55,6 +44,18 @@ extension String {
     
     func isNotValidEmail() -> Bool {
         return !self.isValidEmail()
+    }
+
+    // Usage: myDateString.convertDateFormat(from: "yyyy-MM-dd", to: "MMMM d, yyyy")
+    func convertDateFormat(from: String, to: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = from
+        let date = dateFormatter.date(from: self)
+        dateFormatter.dateFormat = to
+        
+        if let validDate = date { return "\(dateFormatter.string(from: validDate))" }
+
+        return self
     }
 
     // Convert a string, which is a valid date, to "time ago"

@@ -1,5 +1,7 @@
 // CustomTextField.swift
 
+import UIKit
+
 class CustomTextField: UITextField {
     
     private var __maxLengths = [UITextField: Int]()
