@@ -1,5 +1,7 @@
 // UIViewControllerExtensions.swift
 
+import UIKit
+
 extension UIViewController {
 
     // Just call this on your viewDidLoad() and it will do the job of hiding the keyboard

@@ -3,6 +3,8 @@
 // Usage: UIColor(red: 255, green: 255, blue: 255)
 // Usage: UIColor(netHex: 0xffffff)
 
+import UIKit
+
 extension UIColor {
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

@@ -1,6 +1,8 @@
 // Loading.swift
 // A utility class that shows a loading overlay on the screen
+// Perfect for making the user wait for the server to respond
 // You don't have to create it manually on the Storyboard over and over again
+// Usage: Loading.shared.show(self.view); Loading.shared.hide()
 
 import UIKit
 
