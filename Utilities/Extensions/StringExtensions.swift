@@ -46,14 +46,18 @@ extension String {
         return !self.isValidEmail()
     }
 
+    // Convert a string to your specified format or use the default parameters
     // Usage: myDateString.convertDateFormat(from: "yyyy-MM-dd", to: "MMMM d, yyyy")
-    func convertDateFormat(from: String, to: String) -> String {
+    // See: http://nsdateformatter.com/ for more awesome knowledge
+    func convertDateFormat(from: String = "yyyy-MM-dd", to: String = "MMMM d, yyyy") -> String {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = from
         let date = dateFormatter.date(from: self)
         dateFormatter.dateFormat = to
         
-        if let validDate = date { return "\(dateFormatter.string(from: validDate))" }
+        if let validDate = date {
+            return "\(dateFormatter.string(from: validDate))"
+        }
 
         return self
     }
@@ -61,7 +65,7 @@ extension String {
     // Convert a string, which is a valid date, to "time ago"
     // Usage: myDateString.toTimeAgo(ofFormat: "yyyy-MM-dd HH:mm:ss Z", isNumeric: true)
     // See: http://nsdateformatter.com/ for more awesome knowledge
-    func toTimeAgo(ofFormat: String, isNumeric: Bool = false) -> String {
+    func toTimeAgo(ofFormat: String = "yyyy-MM-dd HH:mm:ss Z", isNumeric: Bool = false) -> String {
         
         // Convert the string into a Date first
         let dateFormatter = DateFormatter()
