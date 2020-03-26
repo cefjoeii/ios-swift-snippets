@@ -3,7 +3,7 @@
 //  A UITabBarController subclass implementation to avoid using Storyboards
 //
 //  Created by Ceferino Jose II on 26/03/2020.
-//  Copyright © 2019 Ceferino Jose II. All rights reserved.
+//  Copyright © 2020 Ceferino Jose II. All rights reserved.
 //
 
 import UIKit
