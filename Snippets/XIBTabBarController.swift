@@ -1,6 +1,6 @@
 //
 //  XIBTabBarController.swift
-//  A UITabBarController subclass implementation to avoid using Storyboards
+//  A UITabBarController subclass implementation to avoid using Storyboards.
 //
 //  Created by Ceferino Jose II on 26/03/2020.
 //  Copyright © 2020 Ceferino Jose II. All rights reserved.
@@ -12,8 +12,8 @@ class XIBTabBarController: UITabBarController {
     // MARK: - ViewControllers
     lazy var tabVC1: UIViewController = {
         let vc = UIViewController()
-        vc.tabBarItem.image = UIImage(named: "icon_tab_1")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_1_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: "icon_tab_1")
+        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_1_selected")
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         // vc.tabBarItem.title = "tab_1".localized
         
@@ -22,8 +22,8 @@ class XIBTabBarController: UITabBarController {
     
     lazy var tabVC2: UIViewController = {
         let vc = UIViewController()
-        vc.tabBarItem.image = UIImage(named: "icon_tab_2")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_2_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: "icon_tab_2")
+        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_2_selected")
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         // vc.tabBarItem.title = "tab_2".localized
         
@@ -32,8 +32,8 @@ class XIBTabBarController: UITabBarController {
     
     lazy var tabVC3: UIViewController = {
         let vc = UIViewController()
-        vc.tabBarItem.image = UIImage(named: "icon_tab_3")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_3_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: "icon_tab_3")
+        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_3_selected")
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         // vc.tabBarItem.title = "tab_3".localized
         
@@ -42,8 +42,8 @@ class XIBTabBarController: UITabBarController {
     
     lazy var tabVC4: UIViewController = {
         let vc = UIViewController()
-        vc.tabBarItem.image = UIImage(named: "icon_tab_4")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_4_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: "icon_tab_4")
+        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_4_selected")
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         // vc.tabBarItem.title = "tab_4".localized
         
@@ -52,8 +52,8 @@ class XIBTabBarController: UITabBarController {
     
     lazy var tabVC5: UIViewController = {
         let vc = UIViewController()
-        vc.tabBarItem.image = UIImage(named: "icon_tab_5")?.withRenderingMode(.alwaysOriginal)
-        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_5_selected")?.withRenderingMode(.alwaysOriginal)
+        vc.tabBarItem.image = UIImage(named: "icon_tab_5")
+        vc.tabBarItem.selectedImage = UIImage(named: "icon_tab_5_selected")
         vc.tabBarItem.imageInsets = UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
         // vc.tabBarItem.title = "tab_5".localized
         
@@ -78,7 +78,7 @@ class XIBTabBarController: UITabBarController {
         self.tabBar.backgroundColor = .white
         self.tabBar.isTranslucent = false
         self.tabBar.layer.borderWidth = 0.5
-        self.tabBar.layer.borderColor = UIColor.hcmGrey.cgColor
+        self.tabBar.layer.borderColor = UIColor.gray.cgColor
         self.tabBar.clipsToBounds = true
     }
 }
